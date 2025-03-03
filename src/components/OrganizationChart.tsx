@@ -221,6 +221,8 @@ const OrganizationChart: React.FC = () => {
           <ReactFlow
             nodes={nodes}
             edges={edges}
+            snapToGrid={true}
+            snapGrid={[15, 15]}
             onNodesChange={onNodesChange}
             onEdgesChange={onEdgesChange}
             onConnect={onConnect}
@@ -231,7 +233,7 @@ const OrganizationChart: React.FC = () => {
           >
             <Controls />
             <MiniMap />
-            <Background gap={12} size={1} />
+            <Background gap={15} size={1} />
 
             <Panel position="top-right">
               <div className="button-container">
